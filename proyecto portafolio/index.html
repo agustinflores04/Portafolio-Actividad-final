@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio personal</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./img/portafolio.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="encabezado1">
+    <h2>Portafolio personal</h2>
+    <nav>
+      <ul class="lista-encabezado">
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li id="reservar-consulta"><a href="#contacto">Reservar consulta</a></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="flecha-scroll" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"></div>
+    <h1>Hola, soy Agustín.</h1>
+      <h4 class="desc1">Ayudo a pequeñas empresas y emprendedores a crear experiencias digitales que sean significativas.</h4>
+      <img src="./img/fotocv.jpeg" class="imagen-perfil" alt="foto del propietario del portafolio" width="280px">
+  </main>
+        <section class="acerca-de-mi">
+          <div class="acerca">
+        <h2>Acerca de mí.</h2>
+        <p>Creo en el poder de la colaboración para crear sitios web excepcionales. Como extensión de tu equipo, me sumerjo en tu visión y en tus objetivos. Colaboro estrechamente contigo para desarrollar un sitio web que no solo refleje tu marca sino que también exceda tus espectativas.</p>
+        </div>
+        <img src="./img/trabenequip.webp" class="imagen-trab" alt="foto de trabajo en equipo" width="500px">
+      </section>
+      <section class="seccion-habilidades">
+        <h2 class="subtitulo-habilidades">Habilidades.</h2>
+        <div class="contenedor">
+        <div class="tarjeta-habilidad">
+            <div class="encabezado-habilidad">
+                <h3 class="nombre-habilidad">HTML</h3>
+                <span class="porcentaje-habilidad">90%</span>
+            </div>
+            <div class="contenedor-progreso">
+                <div class="barra-progreso barra-html"></div>
+            </div>
+            <p class="descripcion-habilidad">Estructura semántica y elementos HTML modernos</p>
+        </div>
+
+        <div class="tarjeta-habilidad">
+            <div class="encabezado-habilidad">
+                <h3 class="nombre-habilidad">CSS</h3>
+                <span class="porcentaje-habilidad">85%</span>
+            </div>
+            <div class="contenedor-progreso">
+                <div class="barra-progreso barra-css"></div>
+            </div>
+            <p class="descripcion-habilidad">Estilos avanzados, animaciones y diseño moderno</p>
+        </div>
+
+        <div class="tarjeta-habilidad">
+            <div class="encabezado-habilidad">
+                <h3 class="nombre-habilidad">JavaScript</h3>
+                <span class="porcentaje-habilidad">80%</span>
+            </div>
+            <div class="contenedor-progreso">
+                <div class="barra-progreso barra-js"></div>
+            </div>
+            <p class="descripcion-habilidad">"BackEnd"</p>
+            <div class="texto-debajo-js">Habilidades</div>
+        </div>
+
+        <div class="tarjeta-habilidad">
+            <div class="encabezado-habilidad">
+                <h3 class="nombre-habilidad">Responsive Design</h3>
+                <span class="porcentaje-habilidad">95%</span>
+            </div>
+            <div class="contenedor-progreso">
+                <div class="barra-progreso barra-responsive"></div>
+            </div>
+            <p class="descripcion-habilidad">Diseño adaptable para todos los dispositivos</p>
+        </div>
+    </div>
+      </section>
+      <section id="proyectos" class="proyectos">
+        <h2>Proyectos realizados.</h2>
+        <h3>Proyecto 1</h3>
+        <p>Sitio web para empresa de gastronomía.</p>
+        <h3>Proyecto 2</h3>
+        <p>Descripción del proyecto 2.</p>
+        <h3>Proyecto 3</h3>
+        <p>Descripción del proyecto 3.</p>
+      </section>
+      <section>
+        <h2 id="contacto">Contacto.</h2>
+        <p>Para más información, por favor contáctame a través de:</p>
+        <ul>
+          <li>Email: <a href="mailto:agustin4flores11@gmail.com">agustin4flores11@gmail.com</a></li>
+          <li>Teléfono: +598 92 408 439 (Uruguay)</li>
+          <li>Redes Sociales: <a href="https://www.instagram.com/">Instagram</a>, <a href="https://www.linkedin.com/feed/">Linkedin</a></li>
+        </ul>
+        <p>Otra forma de contactarme es a través de <a href="#reservar-consulta">mi formulario de contacto</a> en la página web.</p>
+      </section>
+</body>
+</html>

@@ -1,0 +1,259 @@
+.encabezado1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin: 1px 0;
+  background-color: #e3a0a0;
+  font-family: 'Story Script', cursive;
+  font-weight: bold;
+animation: enhance-header linear both;
+animation-timeline: scroll (root);
+margin-bottom: 0.5px;
+margin-top: 3px;
+}
+.lista-encabezado li:not(:last-child){
+  margin-right: 30px; /* Solo aplica margen a todos excepto al último */
+}
+.lista-encabezado{
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  font-family: 'Source Serif 4', serif;
+}
+.lista-encabezado li a{
+  color: #337d46;
+}
+.lista-encabezado li a:hover{
+  opacity: 0.7;
+}
+.imagen-perfil{
+  border-radius: 20%;
+  align-items: left;
+  margin: 13px 0;
+  transition: transform 0.3s ease;
+  float:right;
+  margin-left: 1500px;
+  position: relative;
+  top:-85px
+}
+.imagen-perfil:hover{
+  transform: scale(1.2);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  background-color: rgb(179, 179, 198);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-family: 'Source Serif 4', serif;
+  margin-top: 5px;
+  font-size: 30px;
+  margin-bottom: 1px;
+}
+/*colocarle ancho al texto*/
+.desc1{ 
+  width: 1000px;
+}
+.acerca-de-mi{
+  margin: 20px 0;
+  padding:100px;
+  border-radius: 10px;
+  background-color: #9eb9d5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-family: 'Epunda Slab', serif;
+}
+.acerca{
+  font-size: 20px;
+ width: 1000px;
+  text-align: right;
+  margin-left: auto; /*colocar texto a la derecha*/
+}
+.flecha-scroll {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #e3a0a0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.flecha-scroll::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-bottom: 3px solid #337d46;
+  border-right: 3px solid #337d46;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.flecha-scroll:hover {
+  background-color: #337d46;
+  transform: translateY(-5px);
+}
+
+.flecha-scroll:hover::after {
+  border-color: white;
+  transform: rotate(45deg) scale(1.2);
+}
+.imagen-trab{
+  opacity: 0;
+  transform: translateX(-100px) rotate(-10deg);
+  animation: emerge-side linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 180%;
+}
+
+@keyframes emerge-side {
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+.seccion-habilidades{
+  margin: 20px 0;
+  padding:100px;
+  border-radius: 10px;
+  background-color: #9eb9d5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-family: 'Epunda Slab', serif;
+}
+.contenedor {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .tarjeta-habilidad {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tarjeta-habilidad:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .encabezado-habilidad {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .nombre-habilidad {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2d3748;
+            margin: 0;
+        }
+
+        .porcentaje-habilidad {
+            font-size: 18px;
+            font-weight: 700;
+            color: #4a5568;
+        }
+
+        .contenedor-progreso {
+            width: 100%;
+            height: 8px;
+            background-color: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .barra-progreso {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 2s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .barra-progreso::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, 
+                rgba(255,255,255,0.2) 25%, 
+                transparent 25%, 
+                transparent 50%, 
+                rgba(255,255,255,0.2) 50%, 
+                rgba(255,255,255,0.2) 75%, 
+                transparent 75%);
+            background-size: 20px 20px;
+            animation: brillo 2s linear infinite;
+        }
+
+        @keyframes brillo {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .barra-html {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            width: 0;
+            animation: llenarHTML 2s ease-in-out forwards;
+        }
+
+        .barra-css {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            width: 0;
+            animation: llenarCSS 2s ease-in-out 0.5s forwards;
+        }
+
+        .barra-js {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            width: 0;
+            animation: llenarJS 2s ease-in-out 1s forwards;
+        }
+
+        .barra-responsive {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 0;
+            animation: llenarResponsive 2s ease-in-out 1.5s forwards;
+        }
+
+        @keyframes llenarHTML { to { width: 90%; } }
+        @keyframes llenarCSS { to { width: 85%; } }
+        @keyframes llenarJS { to { width: 80%; } }
+        @keyframes llenarResponsive { to { width: 95%; } }
+
+        .descripcion-habilidad {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #718096;
+        }
+        .subtitulo-habilidades{
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+.proyectos{
+    margin: 20px 0;
+    padding:100px;
+    border-radius: 10px;
+    background-color: #9eb9d5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-family: 'Epunda Slab', serif;
+}

@@ -40,7 +40,6 @@
         <img src="./img/trabenequip.webp" class="imagen-trab" alt="foto de trabajo en equipo" width="500px">
       </section>
       <section class="seccion-habilidades">
-        <h2 class="subtitulo-habilidades">Habilidades.</h2>
         <div class="contenedor">
         <div class="tarjeta-habilidad">
             <div class="encabezado-habilidad">
@@ -52,7 +51,6 @@
             </div>
             <p class="descripcion-habilidad">Estructura semántica y elementos HTML modernos</p>
         </div>
-
         <div class="tarjeta-habilidad">
             <div class="encabezado-habilidad">
                 <h3 class="nombre-habilidad">CSS</h3>
@@ -63,7 +61,6 @@
             </div>
             <p class="descripcion-habilidad">Estilos avanzados, animaciones y diseño moderno</p>
         </div>
-
         <div class="tarjeta-habilidad">
             <div class="encabezado-habilidad">
                 <h3 class="nombre-habilidad">JavaScript</h3>
@@ -75,7 +72,6 @@
             <p class="descripcion-habilidad">"BackEnd"</p>
             <div class="texto-debajo-js">Habilidades</div>
         </div>
-
         <div class="tarjeta-habilidad">
             <div class="encabezado-habilidad">
                 <h3 class="nombre-habilidad">Responsive Design</h3>
@@ -86,26 +82,143 @@
             </div>
             <p class="descripcion-habilidad">Diseño adaptable para todos los dispositivos</p>
         </div>
+         <h2 class="subtitulo-habilidades">
+            <span>H</span><span>a</span><span>b</span><span>i</span><span>l</span><span>i</span><span>d</span><span>a</span><span>d</span><span>e</span><span>s</span><span>.</span>
+         </h2>
     </div>
       </section>
       <section id="proyectos" class="proyectos">
-        <h2>Proyectos realizados.</h2>
-        <h3>Proyecto 1</h3>
-        <p>Sitio web para empresa de gastronomía.</p>
-        <h3>Proyecto 2</h3>
-        <p>Descripción del proyecto 2.</p>
-        <h3>Proyecto 3</h3>
-        <p>Descripción del proyecto 3.</p>
+         <h2>Proyectos realizados.</h2>
+        <div class="grilla-proyectos">
+            <div class="tarjeta-proyecto">
+                <div class="imagen-proyecto">
+                    <img src="./img/rest.jpg" alt="Proyecto 1">
+                    <div class="etiqueta-proyecto">Proyecto 1</div>
+                </div>
+                <div class="contenido-proyecto">
+                    <h3 class="titulo-proyecto">Sitio Web para empresa de gastronomía.</h3>
+                    <p class="descripcion-proyecto">
+                        Un sitio web moderno para una empresa local, desarrollado con HTML, CSS y JavaScript.
+                    </p>
+                    <a href="https://www.equilibrirestaurant.com/" class="enlace-proyecto">Ver proyecto</a>
+                </div>
+            </div>
+            <div class="tarjeta-proyecto">
+                <div class="imagen-proyecto">
+                    <img src="./img/sofka.jpg" alt="Proyecto 2">
+                    <div class="etiqueta-proyecto">Proyecto 2</div>
+                </div>
+                <div class="contenido-proyecto">
+                    <h3 class="titulo-proyecto">Web de aprendizaje.</h3>
+                    <p class="descripcion-proyecto">
+                        Una aplicación web pensada para alumnos de cursos dictados por centro de estudios.
+                    </p>
+                    <a href="https://jovenes.tocaunavida.org/notices/training/635761fef27623a729b8e6a8" class="enlace-proyecto">Ver proyecto</a>
+                </div>
+            </div>
+            <div class="tarjeta-proyecto">
+                <div class="imagen-proyecto">
+                    <img src="./img/tata.jfif" alt="Proyecto 3">
+                    <div class="etiqueta-proyecto">Proyecto 3</div>
+                </div>
+                <div class="contenido-proyecto">
+                    <h3 class="titulo-proyecto">Web para compras y exibhición de productos.</h3>
+                    <p class="descripcion-proyecto">
+                        Una página web para un comercio local dedidaco a la venta de comestibles y productos en general.
+                    </p>
+                    <a href="https://www.tata.com.uy/" class="enlace-proyecto">Ver proyecto</a>
+                </div>
+            </div>
+        </div>
       </section>
-      <section>
+      <section class="contacto">
         <h2 id="contacto">Contacto.</h2>
-        <p>Para más información, por favor contáctame a través de:</p>
-        <ul>
-          <li>Email: <a href="mailto:agustin4flores11@gmail.com">agustin4flores11@gmail.com</a></li>
-          <li>Teléfono: +598 92 408 439 (Uruguay)</li>
-          <li>Redes Sociales: <a href="https://www.instagram.com/">Instagram</a>, <a href="https://www.linkedin.com/feed/">Linkedin</a></li>
-        </ul>
-        <p>Otra forma de contactarme es a través de <a href="#reservar-consulta">mi formulario de contacto</a> en la página web.</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p>Para más información, por favor contáctame a través de:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:agustin4flores11@gmail.com">agustin4flores11@gmail.com</a></li>
+                    <li><strong>Teléfono:</strong> +598 92 408 439 (Uruguay)</li>
+                    <li><strong>Redes Sociales:</strong> 
+                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>, 
+                        <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+                    </li>
+                </ul>
+                </div>
+            <div class="contact-form">
+                <h3>Envíame un Mensaje</h3>
+                <div class="success-message" id="successMessage">
+                    ¡Mensaje enviado correctamente! Te responderé pronto.
+                </div>
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="consulta">Consulta General</option>
+                                <option value="proyecto">Proyecto</option>
+                                <option value="colaboracion">Colaboración</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('formularioContacto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const botonEnviar = document.querySelector('.boton-enviar');
+            const mensajeExito = document.getElementById('mensajeExito');
+            botonEnviar.textContent = 'Enviando...';
+            botonEnviar.disabled = true;
+            setTimeout(() => {
+                mensajeExito.style.display = 'block';
+                document.getElementById('formularioContacto').reset();
+                botonEnviar.textContent = 'Enviar Mensaje';
+                botonEnviar.disabled = false;
+                setTimeout(() => {
+                    mensajeExito.style.display = 'none';
+                }, 5000);
+                
+            }, 1500);
+        });
+
+        document.querySelectorAll('input[required], textarea[required], select[required]').forEach(field => {
+            field.addEventListener('blur', function() {
+                if (!this.value.trim()) {
+                    this.style.borderLeft = '4px solid #e74c3c';
+                } else {
+                    this.style.borderLeft = '4px solid #27ae60';
+                }
+            });
+        });
+    </script>
       </section>
+      <footer class="final">
+        <p>&copy; 2025 Agustin Flores. Todos los derechos reservados.</p>
+      </footer>
 </body>
 </html>
